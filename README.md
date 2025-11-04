@@ -17,12 +17,18 @@ pnpm test
 
 ## What You'll See
 
-### in [dist-rolldown/index.js](dist-rolldown/index.js#L13)
+### in `1.0.0-beta.1` [dist-rolldown/index.js](dist-rolldown/index.js#L13)
+
+```js
+<script lang="ts">console.log('Hello');</script>
+```
+
+### in `1.0.0-beta.46` [dist-rolldown/index.js](dist-rolldown/index.js#L13)
 
 ```js
 <script lang="ts">
 	console.log('Hello');
-</script>
+<\/script>
 ```
 
 ### in [dist-tsdown/index.js](dist-tsdown/index.js#L12)
