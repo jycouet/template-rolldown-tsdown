@@ -1,4 +1,3 @@
-
 //#region src/index.ts
 function dedent(strings, ...values) {
 	if (typeof strings === "string") return strings.trim().replace(/^\n+|\n+$/g, "");
@@ -7,20 +6,18 @@ function dedent(strings, ...values) {
 	return result.trim().replace(/^\n+|\n+$/g, "");
 }
 function testTaggedTemplateLiteral() {
-	const result = dedent`
+	return dedent`
 		<script lang="ts">
 			console.log('Hello');
-		</script>
+		<\/script>
 	`;
-	return result;
 }
 function testFunctionCall() {
-	const result = dedent(`
+	return dedent(`
 		<script lang="ts">
 			console.log('Hello');
-		</script>
+		<\/script>
 	`);
-	return result;
 }
 const taggedResult = testTaggedTemplateLiteral();
 const functionResult = testFunctionCall();
